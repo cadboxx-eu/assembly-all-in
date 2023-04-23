@@ -1,0 +1,2 @@
+# assembly-all-in
+trial
