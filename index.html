@@ -209,23 +209,21 @@
                 <img id="metal" src="textures/metal/TexturesCom_MetalBare0043_M.jpg">
                 <img id="metal2" src="textures/metal/TexturesCom_MetalBare0086_1_M.jpg">
                 <img id="metal3" src="textures/metal/TexturesCom_MetalBare0104_1_M.jpg">
-
+                <a-mixin id="modelmover" geometry="gltf-model:model" hoverable grabbable stretchable draggable droppable
+                     event-set__hoveron="_event: hover-start; material.opacity: 0.7; transparent: true"
+                     event-set__hoveroff="_event: hover-end; material.opacity: 1; transparent: false"
+                     body="shape: none" shape="shape: box; halfExtents: 1 1 1" shadow></a-mixin>
                 <a-mixin id="cube" geometry="primitive: box; width: 2.0; height: 2.0; depth: 2.0"
                          hoverable grabbable stretchable draggable droppable
                          event-set__hoveron="_event: hover-start; material.opacity: 0.7; transparent: true"
                          event-set__hoveroff="_event: hover-end; material.opacity: 1; transparent: false"
                          body="shape: none" shape="shape: box; halfExtents: 1 1 1" shadow></a-mixin>
-                <a-mixin id="gltfmodel" gltf-model="#cbb1"
+                <a-mixin id="gltfmodel" geometry="gltf-model:model"
                          hoverable grabbable stretchable draggable droppable clickable
                          event-set__hoveron="_event: hover-start; material.opacity: 0.7; transparent: true"
                          event-set__hoveroff="_event: hover-end; material.opacity: 1; transparent: false"
                          body="shape: none" shape="shape: box; halfExtents: 0.5 0.5 0.5" shadow></a-mixin>
-
-                <a-mixin id="voxel"
-                         geometry="primitive: box; height: 0.5; width: 0.5; depth: 0.5"
-                         material="shader: standard"
-                         random-color
-                         snap="offset: 0.25 0.25 0.25; snap: 0.5 0.5 0.5"></a-mixin>
+                
                 <a-mixin id="voxelcb1"
                          gltf-model="#cb1"
                          snap="offset: 0.5 0.5 0.5; snap: 1 1 1"></a-mixin>
@@ -303,17 +301,6 @@
                 <a-asset-item id="pistonplus" src="https://cdn.glitch.global/2a3af8bb-e7b2-4e50-8ce2-68e3e8cf4538/pistonplus.glb?v=1674335113584"></a-asset-item>
 
                 <a-asset-item id="waddler" src="https://cdn.glitch.global/2a3af8bb-e7b2-4e50-8ce2-68e3e8cf4538/waddler.glb?v=1668021723166"></a-asset-item>
-
-                <img id="galaxy" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/780593/galaxy.jpg">
-                <img id="moon" src="https://raw.githubusercontent.com/aframevr/sample-assets/master/assets/images/space/moon_1024.jpg">
-                <img id="clouds" src="https://raw.githubusercontent.com/aframevr/sample-assets/master/assets/images/space/earth_clouds_2048.png">
-                <img id="venus" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/780593/5710820393_a36f3c730b_m.jpg">
-                <img id="pic1" src="https://cdn.glitch.global/2a3af8bb-e7b2-4e50-8ce2-68e3e8cf4538/border-pic.jpg?v=1654934865728">
-                <img id="pic2" src="https://cdn.glitch.com/2a3af8bb-e7b2-4e50-8ce2-68e3e8cf4538%2Fsclight.png?v=1618928375551">
-                <img id="pic3" src="https://cdn.glitch.global/2a3af8bb-e7b2-4e50-8ce2-68e3e8cf4538/skateboard1200x400bg-white.png?v=1659609701460">
-                <img id="pic4" src="https://cdn.glitch.global/2a3af8bb-e7b2-4e50-8ce2-68e3e8cf4538/cadboxx-border.png?v=1659362950670">
-                <img id="pic5" src="https://cdn.glitch.global/2a3af8bb-e7b2-4e50-8ce2-68e3e8cf4538/roboxx.png?v=1659362885712">
-                <img id="pic6" src="https://cdn.glitch.global/2a3af8bb-e7b2-4e50-8ce2-68e3e8cf4538/cadboxx.png?v=1659434696690">
 
                 <!--sphorb-->
                 <a-asset-item id="bb02" src="https://cdn.glitch.global/2a3af8bb-e7b2-4e50-8ce2-68e3e8cf4538/sphorb1.glb?v=1655710163279"></a-asset-item>
@@ -574,9 +561,12 @@
 
                 
             </a-assets>
+
+    <a-entity id="bxx1" mixin="#cube" psiition="0 5 0" dynamic-body click-impulse ></a-entity>
+            
                 
       <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9" dynamic-body click-impulse ></a-box>
-      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5 dynamic-body click-impulse E"></a-sphere>
+      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5" dynamic-body click-impulse></a-sphere>
       <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D" dynamic-body click-impukse            ></a-cylinder>
       
             <a-entity id="gg1" gltf-model="#cadboxx-floor" position="0 0 0" rotation="0 0 0" static-body visible="false"></a-entity>
