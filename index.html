@@ -35,23 +35,7 @@
     <script src="https://unpkg.com/aframe-event-set-component@4.2.1/dist/aframe-event-set-component.min.js"></script>
     <!--super keyboard-->
     <link rel="stylesheet" type="text/css" href="aframe.css">
-    <script>
-        AFRAME.registerComponent('cai', {
-            init: function () {
-                document.getElementById('ctrl-alt-i').addEventListener('click', function () {
-                    // create a new keyboard event
-                    var event = new KeyboardEvent('keydown', {
-                        key: 'i',
-                        altKey: true,
-                        ctrlKey: true
-                    });
-                    // dispatch the ctrl-alt+i key press event
-                    document.dispatchEvent(event);
-                });
-            }
-        });
-    </script>
-
+    
     <script type="text/javascript">
         if (window.AFRAME == null) {
             console.error("aframe not found, please import it before this component.")
