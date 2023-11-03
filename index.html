@@ -693,196 +693,21 @@
                     <a-entity hand-controls="left"></a-entity>
                     <a-entity hand-controls="right"></a-entity>
 
-                    <!-- UI widgets template --
-    <a-entity position="0 1 0" rotation="0 0 0" scale="1 1 1">
-        <a-entity id="target"
-                  position="0 0.5 -1.5"
-                  gltf-model="#cb1">
-        </a-entity>
-
-        <!-- Button, custom styles --
-        <a-entity id="buttonCustom" ui-button="value: 0; base: beveled-square, blue; top: square, darkgreen; pressed: yellow, offset" position="-0.7 0.1 -0.3" rotation="45 0 0"></a-entity>
-
-        <!-- Button, uses default styles --
-        <a-entity id="buttonStd" ui-button position="-0.35 0.1 -0.3" rotation="45 0 0"></a-entity>
-
-        <!-- Rotary Knob --
-        <a-entity id="rotaryKnob" ui-rotary position="0 0.1 -0.3" rotation="45 0 0"></a-entity>
-
-        <!-- Toggle Switch --
-        <a-entity id="toggleSwitch" ui-toggle="value: 0" position="0.3 0.1 -0.3" rotation="45 0 0"></a-entity>
-
-        <!-- Slider --
-        <a-entity id="valueSlider" ui-slider="min: 1; max: 10; value: 5" position="0 0 0" rotation></a-entity>
-
-        <!--<a-box id="bxx1" position="2 2 2" rotation="0 0 0" scale="3 3 3" material="color:green"></a-box>
-
-    </a-entity>-->
+                   
                     <!--button-plane-->
                     <a-plane id="bp1" position="0 10 -19" rotation side="double" scale="25 6 1" color="green" static-body></a-plane>
 
 
-                    <!-- UI widgets -->
-                    <a-entity position="0 10 -18.5" rotation="45 0 0" scale="3 3 3">
-
-
-                        <!-- Button, custom styles -->
-                        <a-entity id="buttonCustom" ui-button="value: 0; base: beveled-square, blue; top: square, darkgreen; pressed: yellow, offset" position="-0.7 0.1 -0.3" rotation="45 0 0"></a-entity>
-
-                        <!-- Button, uses default styles -->
-                        <a-entity id="buttonStd" ui-button position="-0.35 0.1 -0.3" rotation="45 0 0"></a-entity>
-
-                        <!-- Toggle Switch -->
-                        <a-entity id="toggleSwitch" ui-toggle="value: 0" position="0 0.1 -0.3" rotation="45 0 0"></a-entity>
-
-                        <!-- Button, uses default styles -->
-                        <a-entity id="buttonStd12" ui-button position="0.35 0.1 -0.3" rotation="45 0 0"></a-entity>
-
-                        <!-- Button, custom styles -->
-                        <a-entity id="buttonCustom12" ui-button="value: 0; base: beveled-square, purple; top: square, green; pressed: yellow, offset" position="0.7 0.1 -0.3" rotation="45 0 0"></a-entity>
-
-
-                    </a-entity>
-
-
-                    <!-- Button, custom styles -->
-                    <a-entity id="buttonCustom" ui-button="value: 0; top: square, darkgreen; pressed: yellow, offset" position="0 10 -19" rotation="90 0 0" scale=".25 .25 1"></a-entity>
-
-                    <!-- Button, uses default styles -->
-                    <a-entity id="buttonStd" ui-button position="0 10 -18.5" rotation="90 0 0" scale=".05 .05 .05"></a-entity>
-
-                    <!-- Rotary Knob --
-    <a-entity id="rotaryKnob" ui-rotary position="0 0.1 1" rotation="90 0 0"></a-entity>
-
-    <!-- Toggle Switch --
-    <a-entity id="toggleSwitch" ui-toggle="value: 0" position="0.3 0.1 1" rotation="90 0 0"></a-entity>
-
-    <!-- Toggle Switch --       <a-entity id="toggleSwitch2" ui-toggle="value: 0" position="0.5 0.1 1" rotation="0 0 0"></a-entity>
-
-    <a-entity id="toggleSwitch3" ui-toggle="value: 0" position="0.7 0.1 1" rotation="90 0 0"></a-entity>
-
-    <!-- Toggle Switch --       <a-entity id="toggleSwitch4" ui-toggle="value: 0" position="0.9 0.1 1" rotation="90 0 0"></a-entity>
-
-    <!-- Slider --
-        <a-entity id="valueSlider" ui-slider="min: 1; max: 10; value: 5" position="0 -0.2 1" rotation="90 0 0"></a-entity>
-        -->
+                   
                     <!--assembly planes-->
                     <a-entity id="wall-buttons" position="0 12 18" rotation="90 0 0"></a-entity>
                     <a-entity id="assplane1" gltf-model="#bb030" rotation="90 0 0" scale="1 1 1" visible="true" static-body>
 
-                        <a-entity position="0 1 0" rotation="0 180 0" scale="1 1 1">
-                            <a-entity id="target"
-                                      position="0 0.5 0"
-                                      gltf-model="#bb030"
-                                      constraint="type:hinge;
-                          axis:0 1 0;
-                          targetAxis:0 1 0;
-                          pivot: 0 0 0;
-                          targetPivot: 0 0 0"
-                                      dynamic-body
-                                      click-impulse>
-                            </a-entity>
-                            <!-- Button, custom styles -->
-                            <a-entity id="buttonCustom" ui-button="value: 0; top: square, color: darkgreen; pressed: yellow, offset:0.5" position="0 12 -17.9" rotation="90 0 0" scale="5 5 5"></a-entity>
-
-                            <!-- Button, uses default styles -->
-                            <a-entity id="buttonStd" ui-button position="-0.35 0.1 1" rotation="0 0 0"></a-entity>
-
-                            <!-- Rotary Knob -->
-                            <a-entity id="rotaryKnob" ui-rotary position="0 0.1 1" rotation="0 0 0"></a-entity>
-
-                            <!-- Toggle Switch -->
-                            <a-entity id="toggleSwitch" ui-toggle="value: 0" position="0.3 0.1 1" rotation="0 0 0"></a-entity>
-
-                            <!-- Toggle Switch -->       <a-entity id="toggleSwitch2" ui-toggle="value: 0" position="0.5 0.1 1" rotation="0 0 0"></a-entity>
-
-                            <a-entity id="toggleSwitch3" ui-toggle="value: 0" position="0.7 0.1 1" rotation="0 0 0"></a-entity>
-
-                            <!-- Toggle Switch -->       <a-entity id="toggleSwitch4" ui-toggle="value: 0" position="0.9 0.1 1" rotation="0 0 0"></a-entity>
-
-                            <!-- Slider -->
-                            <a-entity id="valueSlider" ui-slider="min: 1; max: 10; value: 5" position="0 -0.2 1" rotation="0 0 0"></a-entity>
-
-                        </a-entity>
+                        
                     </a-entity>
 
 
-                    <!--assembly planes-->
-                    <a-entity id="circ" layout="type:circle;radius:5" position="0 2.5 0" rotation="-90 0 0">
-                        <a-entity id="assplane1" gltf-model="#bb030" rotation="90 0 0" scale="1 1 1" visible="true" static-body>
-                            <a-entity position="0 1 0" rotation="0 0 0" scale="1 1 1">
-                                <a-entity id="target"
-                                          position="0 0.5 0"
-                                          gltf-model="#bb030"
-                                          constraint="type:hinge;
-                                          axis:0 1 0;
-                                          targetAxis:0 1 0;
-                                          pivot: 0 0 0;
-                                          targetPivot: 0 0 0"
-                                          dynamic-body
-                                          click-impulse>
-                                </a-entity>
-
-                                <!-- Button, custom styles -->
-                                <a-entity id="buttonCustom" ui-button="value: 0; base: beveled-square, blue; top: square, darkgreen; pressed: yellow, offset" position="-0.7 0.1 1" rotation="45 0 0"></a-entity>
-
-                                <!-- Button, uses default styles -->
-                                <a-entity id="buttonStd" ui-button position="-0.35 0.1 1" rotation="45 0 0"></a-entity>
-
-                                <!-- Rotary Knob -->
-                                <a-entity id="rotaryKnob" ui-rotary position="0 0.1 1" rotation="45 0 0"></a-entity>
-
-                                <!-- Toggle Switch -->
-                                <a-entity id="toggleSwitch" ui-toggle="value: 0" position="0.3 0.1 1" rotation="45 0 0"></a-entity>
-
-                                <!-- Toggle Switch -->       <a-entity id="toggleSwitch2" ui-toggle="value: 0" position="0.5 0.1 1" rotation="45 0 0"></a-entity>
-
-                                <a-entity id="toggleSwitch3" ui-toggle="value: 0" position="0.7 0.1 1" rotation="45 0 0"></a-entity>
-
-                                <!-- Toggle Switch -->       <a-entity id="toggleSwitch4" ui-toggle="value: 0" position="0.9 0.1 1" rotation="45 0 0"></a-entity>
-
-                                <!-- Slider -->
-                                <a-entity id="valueSlider" ui-slider="min: 1; max: 10; value: 5" position="0 -0.2 1" rotation="45 0 0"></a-entity>
-
-                            </a-entity>
-                        </a-entity>
-                    </a-entity>
-
-                    <!--<a-box id="bxx1" position="2 2 2" rotation="0 0 0" scale="3 3 3" material="color:green"></a-box>
-    -->
-                    <!--<a-entity layout="type:circle; position: 0 5 0;radius:5; rotation:90 0 0">
-        <a-entity id="target1" gltf-model="#cb1" rotation="0 40 0" scale="1 1 1">
-
-        </a-entity>
-        <a-entity id="target2" gltf-model="#cb1" rotation="0 80 0" scale="1 1 1">
-
-        </a-entity>
-        <a-entity id="target3" gltf-model="#cb1" rotation="0 120 0" scale="1 1 1">
-
-        </a-entity>
-        <a-entity id="target4" gltf-model="#cb1" rotation="0 160 0" scale="1 1 1">
-
-        </a-entity>
-        <a-entity id="target5" gltf-model="#cb1" rotation="0 200 0" scale="1 1 1">
-
-        </a-entity>
-        <a-entity id="target6" gltf-model="#cb1" rotation="0 240 0" scale="1 1 1">
-
-        </a-entity>
-        <a-entity id="target7" gltf-model="#cb1" rotation="0 280 0" scale="1 1 1">
-
-        </a-entity>
-        <a-entity id="target8" gltf-model="#cb1" rotation="0 320 0" scale="1 1 1">
-
-        </a-entity>
-        <a-entity id="target9" gltf-model="#cb1" rotation="0 360 0" scale="1 1 1">
-
-        </a-entity>
-    </a-entity>
-        -->
-
-
-
+                    
                     <a-entity gltf-model="#floor-t" id="f1" poaition="0 0 0" static-body></a-entity>
                     <a-entity gltf-model="#cadboxx-floor" id="f2" poaition="0 0 0" static-body></a-entity>
 
